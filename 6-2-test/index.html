@@ -6,30 +6,32 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>FloatとClearfix</title>
 	<style>
-	div, h1, p, dl, dt, dd{
-		margin: 0;
-		padding: 0;
-	}
-	.container{
-		width: 600px;
-		padding: 10px;
-		border: 2px solid #ccc;
-	}
-	p{
-		margin-top: 0.5em;
-		line-height: 1.5;
-	}
-	dl{
-		margin-top: 1em;
-		border: 1px solid #4BB2A9;
-		border-radius: 6px;
-	}
-	dt{
-		font-weight: bold;
-	}
-	dd{
-		padding-left: 10px;
-	}
+	h1{
+  width: 260px;
+  float: left;
+}
+p{
+  width: 340px;
+  float: right;
+}
+dt{
+  width: 48px;
+  float: right;
+}
+dd{
+  width: 240px;
+  float: left;
+}
+.content:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+dl:after{
+  content: '';
+  display: block;
+  clear: both;
+}
 	</style>
 </head>
 <body>
